@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovatech AI - El Futuro es Ahora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      @font-face {
+        font-family: 'LucideIcons';
+        src: url(https://cdn.jsdelivr.net/npm/lucide-static@latest/font/Lucide.ttf) format('truetype');
+      }
+      .lucide {
+        font-family: 'LucideIcons';
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Estilo personalizado para gradientes y efectos */
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0a0a0f; /* Fondo oscuro principal */
+        color: #e0e0e0; /* Color de texto principal */
+      }
+      .gradient-text {
+        background: linear-gradient(90deg, #4f46e5, #ec4899);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .hero-bg {
+        background: radial-gradient(circle at top left, rgba(79, 70, 229, 0.3), transparent 40%),
+                    radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.3), transparent 40%),
+                    #0a0a0f;
+      }
+      .card-bg {
+          background-color: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .icon-style {
+          font-size: 24px; /* Tamaño de los iconos Lucide */
+          margin-right: 8px; /* Espacio a la derecha del icono */
+          vertical-align: middle; /* Alinear verticalmente con el texto */
+      }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-opacity-70 bg-[#0a0a0f] border-b border-gray-800/50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="lucide icon-style text-indigo-400">&#xea2d;</span>
+                    <span class="text-xl font-bold text-white ml-2">Innovatech AI</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#inicio" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Inicio</a>
+                    <a href="#servicios" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Servicios</a>
+                    <a href="#nosotros" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Nosotros</a>
+                    <a href="#contacto" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                     <button id="mobile-menu-button" class="text-gray-400 hover:text-white focus:outline-none">
+                         <span class="lucide text-2xl">&#xea48;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#inicio" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Inicio</a>
+                <a href="#servicios" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Servicios</a>
+                <a href="#nosotros" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Nosotros</a>
+                <a href="#contacto" class="bg-indigo-600 hover:bg-indigo-700 text-white block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="pt-32 pb-20 hero-bg min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
+                Construyendo el <span class="gradient-text">Metaverso Inteligente</span> del Mañana
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto mb-10">
+                Fusionamos el poder de la Inteligencia Artificial y la descentralización de Web3 para crear experiencias inmersivas y soluciones innovadoras.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#servicios" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                    Descubre Más
+                </a>
+                <a href="#contacto" class="border border-indigo-400 text-indigo-300 hover:bg-indigo-500 hover:text-white px-8 py-3 rounded-lg text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+                    Habla con Nosotros
+                </a>
+            </div>
+             <div class="mt-16">
+                <img src="https://placehold.co/800x400/1f2937/e0e0e0?text=Visualización+Futurista+Web3+AI"
+                     alt="Visualización Futurista Web3 AI"
+                     class="mx-auto rounded-lg shadow-xl"
+                     onerror="this.src='https://placehold.co/800x400/1f2937/e0e0e0?text=Error+al+cargar+imagen'; this.alt='Error al cargar imagen'">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-20 bg-[#111118]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-white mb-4">Nuestras Soluciones <span class="gradient-text">Web3 + AI</span></h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+                Ofrecemos servicios de vanguardia para impulsar tu proyecto en la nueva era digital.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-bg p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-indigo-500/30 hover:-translate-y-1">
+                    <span class="lucide icon-style text-indigo-400">&#xe97b;</span>
+                    <h3 class="text-xl font-semibold text-white mb-3 inline-block">IA Descentralizada</h3>
+                    <p class="text-gray-300">Modelos de IA entrenados y ejecutados en redes descentralizadas para mayor seguridad y transparencia.</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-pink-500/30 hover:-translate-y-1">
+                     <span class="lucide icon-style text-pink-400">&#xe97a;</span>
+                    <h3 class="text-xl font-semibold text-white mb-3 inline-block">Plataformas Metaverso</h3>
+                    <p class="text-gray-300">Desarrollo de mundos virtuales interactivos y economías basadas en tokens para comunidades y empresas.</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-purple-500/30 hover:-translate-y-1">
+                     <span class="lucide icon-style text-purple-400">&#xeae6;</span>
+                    <h3 class="text-xl font-semibold text-white mb-3 inline-block">Identidad Digital Segura</h3>
+                    <p class="text-gray-300">Soluciones de identidad soberana (SSI) utilizando blockchain para un control total de los datos personales.</p>
+                </div>
+                 <div class="card-bg p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-teal-500/30 hover:-translate-y-1">
+                     <span class="lucide icon-style text-teal-400">&#xe98e;</span>
+                    <h3 class="text-xl font-semibold text-white mb-3 inline-block">Análisis Predictivo Web3</h3>
+                    <p class="text-gray-300">Utilizamos IA para analizar datos on-chain y predecir tendencias en mercados DeFi y NFT.</p>
+                </div>
+                 <div class="card-bg p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-orange-500/30 hover:-translate-y-1">
+                     <span class="lucide icon-style text-orange-400">&#xe93a;</span>
+                    <h3 class="text-xl font-semibold text-white mb-3 inline-block">Avatares Inteligentes</h3>
+                    <p class="text-gray-300">Creación de avatares y NPCs con IA para interacciones realistas en entornos virtuales.</p>
+                </div>
+                 <div class="card-bg p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-cyan-500/30 hover:-translate-y-1">
+                     <span class="lucide icon-style text-cyan-400">&#xeb4c;</span>
+                    <h3 class="text-xl font-semibold text-white mb-3 inline-block">Automatización DAO</h3>
+                    <p class="text-gray-300">Herramientas de IA para optimizar la gobernanza y operaciones de Organizaciones Autónomas Descentralizadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-20 bg-[#0a0a0f]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <h2 class="text-3xl font-bold text-white mb-4">Sobre <span class="gradient-text">Innovatech AI</span></h2>
+                    <p class="text-gray-300 mb-6 text-lg">
+                        Somos un equipo apasionado de desarrolladores, investigadores de IA y expertos en blockchain dedicados a explorar la sinergia entre Web3 y la Inteligencia Artificial.
+                    </p>
+                    <p class="text-gray-400 mb-6">
+                        Nuestra misión es descentralizar la inteligencia y construir un futuro digital más abierto, equitativo e inmersivo para todos. Creemos en el potencial transformador de estas tecnologías combinadas.
+                    </p>
+                    <a href="#contacto" class="inline-flex items-center bg-transparent border border-pink-500 text-pink-400 hover:bg-pink-500 hover:text-white px-6 py-2 rounded-lg font-semibold transition duration-300">
+                         <span class="lucide icon-style">&#xeb3f;</span>
+                        Conoce al Equipo
+                    </a>
+                </div>
+                <div class="lg:w-1/2">
+                     <img src="https://placehold.co/600x400/111118/e0e0e0?text=Equipo+Innovador+Web3+AI"
+                          alt="Equipo Innovador Web3 AI"
+                          class="rounded-lg shadow-xl w-full"
+                           onerror="this.src='https://placehold.co/600x400/111118/e0e0e0?text=Error+al+cargar+imagen'; this.alt='Error al cargar imagen'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20 bg-[#111118]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">¿Listo para Innovar?</h2>
+            <p class="text-gray-400 mb-8 max-w-xl mx-auto">
+                Contáctanos para discutir cómo podemos ayudarte a construir tu próximo gran proyecto en Web3 y AI.
+            </p>
+            <form action="#" method="POST" class="max-w-lg mx-auto">
+                <div class="grid grid-cols-1 gap-y-6">
+                    <div>
+                        <label for="full-name" class="sr-only">Nombre Completo</label>
+                        <input type="text" name="full-name" id="full-name" autocomplete="name" required
+                               class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 bg-gray-900/50 border-gray-700 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"
+                               placeholder="Nombre Completo">
+                    </div>
+                    <div>
+                        <label for="email" class="sr-only">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required
+                               class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 bg-gray-900/50 border-gray-700 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"
+                               placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="message" class="sr-only">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" required
+                                  class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 bg-gray-900/50 border-gray-700 rounded-md text-white focus:ring-indigo-500 focus:border-indigo-500"
+                                  placeholder="Tu Mensaje"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit"
+                                class="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-lg text-base font-medium rounded-md text-white bg-gradient-to-r from-indigo-600 to-pink-600 hover:from-indigo-700 hover:to-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 transform hover:scale-105">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-[#0a0a0f] border-t border-gray-800/50">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">&copy; 2025 Innovatech AI. Todos los derechos reservados.</p>
+             </div>
+    </footer>
+
+    <script>
+        // Script para el menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Script para scroll suave (opcional)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    // Cierra el menú móvil si está abierto antes de hacer scroll
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+
+                    // Calcula la posición del elemento restando la altura del nav fijo
+                    const headerOffset = document.querySelector('nav').offsetHeight;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+
+        // Pequeña animación al hacer scroll (opcional)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in'); // Necesitarías definir esta clase en CSS o con Tailwind
+                }
+            });
+        }, { threshold: 0.1 }); // Se activa cuando el 10% del elemento es visible
+
+        // Observar secciones o elementos que quieras animar
+        // document.querySelectorAll('section > div > div[class*="grid"], section > div > div[class*="lg:flex"]').forEach(el => {
+        //     observer.observe(el);
+        // });
+        // Nota: La animación 'animate-fade-in' no está definida por defecto en Tailwind 4.
+        // Tendrías que definirla tú mismo o usar clases de transición/animación existentes.
+        // Por simplicidad, he comentado la parte de la animación por scroll.
+
+    </script>
+</body>
+</html>
